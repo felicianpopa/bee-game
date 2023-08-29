@@ -1,18 +1,18 @@
-import buildHive from './hiveBuilder';
-import swarmMembers from './swarmData'
-import hitBeeActions from './hitBee';
-import {addName, getName, getGameStatus} from './startGame';
+import buildHive from "./hiveBuilder";
+import swarmMembers from "./swarmData";
+import hitBeeActions from "./hitBee";
+import { startGameModule } from "./startGame";
 
-getName();
-getGameStatus();
+startGameModule.getName();
+startGameModule.getGameStatus();
 buildHive(swarmMembers);
 
-const addNameSelector = document.getElementById('addName')
-addNameSelector?.addEventListener('click', function () {
-  addName();
+const addNameSelector = document.getElementById("addName");
+addNameSelector?.addEventListener("click", function () {
+  startGameModule.addName();
 });
 
-const hitBee = document.getElementById('hitBee')
-hitBee?.addEventListener('click', function () {
-  hitBeeActions()
+const hitBee = document.getElementById("hitBee");
+hitBee?.addEventListener("click", function () {
+  hitBeeActions();
 });

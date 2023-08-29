@@ -1,12 +1,5 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bee game</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Bee game</h1>
+export default function mockHtml() {
+  return `<h1>Bee game</h1>
     <div class="player-input box">
       <label for="playerName">Please enter your name</label>
       <input type="text" name="playerName" id="playerNameInput" />
@@ -40,8 +33,5 @@
       <h2>Game actions:</h2>
       <button id="hitBee">Hit</button>
       <button id="restartGame" style="display: none">Play another game</button>
-    </div>
-
-    <script src="bundle.js"></script>
-  </body>
-</html>
+    </div>`;
+}
